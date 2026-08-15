@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Farah Hussain</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #0A2A66;
+    color: white;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #08204d;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  nav a:hover { opacity: 0.7; }
+  .hero {
+    text-align: center;
+    padding: 50px 20px 30px;
+  }
+  .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; }
+  .hero p { font-size: 1.05rem; opacity: 0.85; }
+  section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  section h2 { font-size: 1.4rem; margin-bottom: 12px; }
+  section p { font-size: 1rem; line-height: 1.6; opacity: 0.9; }
+  .highlight-box {
+    background: rgba(255,255,255,0.08);
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  code {
+    background: rgba(0,0,0,0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  .cta {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    padding: 14px 30px;
+    background: white;
+    color: #0A2A66;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    max-width: 220px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+  <h1>Projects</h1>
+  <p>Here's my core work.</p>
+</div>
+
+<section>
+  <h2>AI-Powered Disaster Warning System</h2>
+  <p>Built with teammate Summaya Shaikh, this project turns raw hazard data (flood, earthquake, landslide, drought) into structured, actionable warnings for Pakistan. My focus was prompt engineering and LLM API integration — designing prompts that resist hallucination and produce consistent, trustworthy output every time.</p>
+</section>
+
+<section>
+  <h2>Technical Highlights</h2>
+  <div class="highlight-box">
+    <strong>Model:</strong> LLaMA 3.1-8b-instant via the Groq API<br><br>
+    <strong>Output format:</strong> Structured JSON — <code>severity_level, headline, message, recommended_action, region, disaster_type, risk_score</code><br><br>
+    <strong>Reliability controls:</strong> Temperature set to 0.3 to reduce randomness, plus explicit anti-fabrication constraints so the model never invents data it wasn't given<br><br>
+    <strong>Stack:</strong> Python backend, HTML frontend
+  </div>
+</section>
+
+<section>
+  <h2>ML Track Work (FlyRank Internship)</h2>
+  <p>Alongside this capstone, I've been completing a structured 8-week ML internship — building baseline scoring models, running data-leakage experiments, and most recently a capstone notebook using Logistic Regression and Random Forest with GroupShuffleSplit to beat a rule-based baseline.</p>
+</section>
+
+<a class="cta" href="https://github.com/farahhussain159-create/flyrank-ml-week1" target="_blank">View GitHub Repo</a>
+
+</body>
+</html>

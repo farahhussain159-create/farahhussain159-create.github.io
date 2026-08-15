@@ -18,6 +18,7 @@
     gap: 30px;
     padding: 20px;
     background-color: #08204d;
+    border-bottom: 2px solid #B794F6;
   }
   nav a {
     color: white;
@@ -25,34 +26,72 @@
     font-weight: 600;
     font-size: 1rem;
   }
-  nav a:hover { opacity: 0.7; }
+  nav a:hover { color: #B794F6; }
   .hero {
     text-align: center;
-    padding: 50px 20px 30px;
+    padding: 55px 20px 35px;
   }
-  .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; }
+  .hero h1 { font-size: 2.2rem; font-weight: 600; margin-bottom: 8px; color: #B794F6; }
   .hero p { font-size: 1.05rem; opacity: 0.85; }
-  section {
-    max-width: 700px;
+  .wrapper {
+    max-width: 750px;
     margin: 0 auto;
-    padding: 30px 20px;
-    border-top: 1px solid rgba(255,255,255,0.15);
-    text-align: center;
+    padding: 0 20px 50px;
   }
-  section h2 { font-size: 1.4rem; margin-bottom: 12px; }
-  .links { display: flex; justify-content: center; gap: 25px; margin-top: 15px; }
-  .links a { color: white; text-decoration: underline; font-size: 1rem; }
+  .facts {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 25px 0;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    margin-bottom: 35px;
+  }
+  .fact {
+    background: rgba(183,148,246,0.12);
+    border: 1px solid rgba(183,148,246,0.35);
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 140px;
+  }
+  .fact .label { font-size: 0.8rem; opacity: 0.7; margin-bottom: 4px; }
+  .fact .value { font-size: 1rem; font-weight: 600; color: #B794F6; }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  .card {
+    background: rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .card:hover { background: rgba(183,148,246,0.15); border-color: #B794F6; }
+  .card .icon { font-size: 1.5rem; margin-bottom: 8px; display: block; }
+  .card .title { font-weight: 600; margin-bottom: 4px; }
+  .card .sub { font-size: 0.85rem; opacity: 0.7; }
   .cta {
     display: block;
     text-align: center;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 14px 30px;
-    background: white;
+    background: #B794F6;
     color: #0A2A66;
     text-decoration: none;
     font-weight: 600;
     border-radius: 8px;
     max-width: 220px;
+  }
+  .cta:hover { background: #a37ded; }
+  @media (max-width: 500px) {
+    .cards { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -66,20 +105,53 @@
 </nav>
 
 <div class="hero">
-  <h1>Contact</h1>
-  <p>Want to talk? Reach out.</p>
+  <h1>Let's Connect</h1>
+  <p>Want to talk? Reach out — I'd love to hear from you.</p>
 </div>
 
-<section>
-  <h2>Get in Touch</h2>
-  <p>Email: farahhussain159@gmail.com</p>
-  <div class="links">
-    <a href="https://github.com/farahhussain159-create" target="_blank">GitHub</a>
-    <a href="https://farahhussain159-create.github.io" target="_blank">Portfolio</a>
-  </div>
-</section>
+<div class="wrapper">
 
-<a class="cta" href="https://github.com/farahhussain159-create/flyrank-ml-week1" target="_blank">View GitHub Repo</a>
+  <div class="facts">
+    <div class="fact">
+      <div class="label">Based in</div>
+      <div class="value">Khairpur, Pakistan</div>
+    </div>
+    <div class="fact">
+      <div class="label">Status</div>
+      <div class="value">Open to opportunities</div>
+    </div>
+    <div class="fact">
+      <div class="label">Focus</div>
+      <div class="value">ML + Prompt Engineering</div>
+    </div>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="mailto:farahhussain159@gmail.com">
+      <span class="icon">✉️</span>
+      <div class="title">Email</div>
+      <div class="sub">farahhussain159@gmail.com</div>
+    </a>
+    <a class="card" href="https://github.com/farahhussain159-create" target="_blank">
+      <span class="icon">🐙</span>
+      <div class="title">GitHub</div>
+      <div class="sub">farahhussain159-create</div>
+    </a>
+    <a class="card" href="https://farahhussain159-create.github.io" target="_blank">
+      <span class="icon">🌐</span>
+      <div class="title">Portfolio</div>
+      <div class="sub">This site</div>
+    </a>
+    <a class="card" href="https://github.com/farahhussain159-create/flyrank-ml-week1" target="_blank">
+      <span class="icon">💻</span>
+      <div class="title">ML Repo</div>
+      <div class="sub">See my code</div>
+    </a>
+  </div>
+
+  <a class="cta" href="mailto:farahhussain159@gmail.com">Say Hello</a>
+
+</div>
 
 </body>
 </html>

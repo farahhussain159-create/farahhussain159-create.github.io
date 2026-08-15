@@ -18,6 +18,7 @@
     gap: 30px;
     padding: 20px;
     background-color: #08204d;
+    border-bottom: 2px solid #F5B942;
   }
   nav a {
     color: white;
@@ -25,12 +26,12 @@
     font-weight: 600;
     font-size: 1rem;
   }
-  nav a:hover { opacity: 0.7; }
+  nav a:hover { color: #F5B942; }
   .hero {
     text-align: center;
     padding: 60px 20px 40px;
   }
-  .hero h1 { font-size: 2.5rem; font-weight: 600; margin-bottom: 10px; }
+  .hero h1 { font-size: 2.5rem; font-weight: 600; margin-bottom: 10px; color: #F5B942; }
   .hero p { font-size: 1.1rem; opacity: 0.85; }
   section {
     max-width: 700px;
@@ -38,22 +39,28 @@
     padding: 30px 20px;
     border-top: 1px solid rgba(255,255,255,0.15);
   }
-  section h2 { font-size: 1.4rem; margin-bottom: 12px; }
+  section h2 { font-size: 1.4rem; margin-bottom: 12px; color: #F5B942; }
   section p { font-size: 1rem; line-height: 1.6; opacity: 0.9; }
   .steps { display: flex; flex-direction: column; gap: 15px; }
-  .step { background: rgba(255,255,255,0.08); padding: 15px; border-radius: 8px; }
+  .step {
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #4FD1C5;
+  }
   .cta {
     display: block;
     text-align: center;
     margin: 40px auto;
     padding: 14px 30px;
-    background: white;
-    color: #0A2A66;
+    background: #FF6F61;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     border-radius: 8px;
     max-width: 220px;
   }
+  .cta:hover { background: #e85a4d; }
 </style>
 </head>
 <body>

@@ -1,36 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farah Hussain — Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #0A2A66;
-      font-family: 'Inter', Arial, sans-serif;
-      color: white;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
-    p {
-      font-size: 1.1rem;
-      opacity: 0.85;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farah Hussain — Portfolio</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #0A2A66;
+    color: white;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #08204d;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  nav a:hover { opacity: 0.7; }
+  .hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+  }
+  .hero h1 { font-size: 2.5rem; font-weight: 600; margin-bottom: 10px; }
+  .hero p { font-size: 1.1rem; opacity: 0.85; }
+  section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  section h2 { font-size: 1.4rem; margin-bottom: 12px; }
+  section p { font-size: 1rem; line-height: 1.6; opacity: 0.9; }
+  .steps { display: flex; flex-direction: column; gap: 15px; }
+  .step { background: rgba(255,255,255,0.08); padding: 15px; border-radius: 8px; }
+  .cta {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    padding: 14px 30px;
+    background: white;
+    color: #0A2A66;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    max-width: 220px;
+  }
+</style>
 </head>
 <body>
-  <div>
-    <h1>Farah Hussain</h1>
-    <p>I connect real-time hazard data to warnings people can act on.</p>
-    <p>🚧 Portfolio coming soon</p>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+  <h1>Farah Hussain</h1>
+  <p>I connect real-time hazard data to warnings people can act on.</p>
+</div>
+
+<section>
+  <h2>The Problem</h2>
+  <p>Pakistan faces recurring floods, earthquakes, landslides, and droughts — but early warnings often don't reach the people who need them in time.</p>
+</section>
+
+<section>
+  <h2>Featured Work: AI-Powered Disaster Warning System</h2>
+  <p>An LLM-driven system that turns raw hazard data into clear, actionable alerts — built with strict anti-fabrication rules and a structured JSON output format so every warning is consistent and trustworthy.</p>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step">1. Hazard data comes in (weather, seismic, flood sources)</div>
+    <div class="step">2. LLaMA 3.1 (via Groq API) assesses risk and drafts the alert</div>
+    <div class="step">3. A structured warning goes out — severity, region, and recommended action</div>
   </div>
+</section>
+
+<a class="cta" href="https://github.com/farahhussain159-create/flyrank-ml-week1" target="_blank">View GitHub Repo</a>
+
 </body>
 </html>

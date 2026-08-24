@@ -41,6 +41,29 @@
   }
   section h2 { font-size: 1.4rem; margin-bottom: 12px; color: #F5B942; }
   section p { font-size: 1rem; line-height: 1.6; opacity: 0.9; }
+  .box {
+    background: rgba(255,255,255,0.08);
+    padding: 15px 18px;
+    border-radius: 8px;
+    border-left: 4px solid #F5B942;
+    margin-bottom: 12px;
+  }
+  .box:last-child { margin-bottom: 0; }
+  .box strong { color: #F5B942; }
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skill-tag {
+    background: rgba(245,185,66,0.12);
+    border: 1px solid rgba(245,185,66,0.35);
+    color: #F5B942;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
   .cta {
     display: block;
     text-align: center;
@@ -71,17 +94,29 @@
 
 <section>
   <h2>Who I Am</h2>
-  <p>I'm a final-year BSCS student at Shah Abdul Latif University, Khairpur. I'm currently completing a dual-track internship at FlyRank — one track on applied ML and search intelligence, the other on AI fluency and prompt engineering.</p>
+  <div class="box">
+    <p style="margin:0;">I'm a final-year BSCS student at Shah Abdul Latif University, Khairpur. I'm currently completing a dual-track internship at FlyRank — one track on applied ML and search intelligence, the other on AI fluency and prompt engineering.</p>
+  </div>
 </section>
 
 <section>
   <h2>Skills</h2>
-  <p>Prompt engineering, LLM API integration, Python, and working hands-on with Groq's LLaMA models. On the ML side: data pipelines, baseline modeling, and evaluation with scikit-learn.</p>
+  <div class="skills-grid">
+    <span class="skill-tag">Prompt Engineering</span>
+    <span class="skill-tag">LLM API Integration</span>
+    <span class="skill-tag">Python</span>
+    <span class="skill-tag">Groq / LLaMA</span>
+    <span class="skill-tag">Data Pipelines</span>
+    <span class="skill-tag">Baseline Modeling</span>
+    <span class="skill-tag">scikit-learn</span>
+  </div>
 </section>
 
 <section>
   <h2>How I Work</h2>
-  <p>Clear, honest, no-nonsense. I'd rather ship something real and imperfect than polish something no one sees. I break problems down step by step and I'm not afraid to say when something's still rough.</p>
+  <div class="box"><strong>Clear, honest, no-nonsense.</strong> I'd rather ship something real and imperfect than polish something no one sees.</div>
+  <div class="box">I break problems down step by step — one piece at a time, verified before moving on.</div>
+  <div class="box">I'm not afraid to say when something's still rough. Honest status beats polished silence.</div>
 </section>
 
 <a class="cta" href="contact.html">Contact Me</a>

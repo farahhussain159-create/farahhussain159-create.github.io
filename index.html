@@ -3,20 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Farah Hussain — final-year BSCS student at SALU building AI/ML projects, including an AI-powered disaster warning system for Pakistan.">
-<meta property="og:title" content="Farah Hussain — Portfolio">
-<meta property="og:description" content="AI/ML portfolio: disaster warning systems, prompt engineering, and applied machine learning projects.">
- <meta property="og:image" content="https://farah-hussain-portfolio.vercel.app/og-image.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://farah-hussain-portfolio.vercel.app">
 <title>Farah Hussain — Portfolio</title>
- <link rel="icon" type="image/png" href="favicon.png">
 <style>
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: 'Inter', Arial, sans-serif;
-    background-color: #0A2A66;
+    background: linear-gradient(160deg, #050B1A 0%, #0A2A66 45%, #123B8F 100%);
+    background-attachment: fixed;
     color: white;
   }
   nav {
@@ -24,8 +18,8 @@
     justify-content: center;
     gap: 30px;
     padding: 20px;
-    background-color: #08204d;
-    border-bottom: 2px solid #F5B942;
+    background-color: rgba(5, 11, 26, 0.75);
+    border-bottom: 2px solid #38BDF8;
   }
   nav a {
     color: white;
@@ -33,12 +27,12 @@
     font-weight: 600;
     font-size: 1rem;
   }
-  nav a:hover { color: #F5B942; }
+  nav a:hover { color: #38BDF8; }
   .hero {
     text-align: center;
     padding: 60px 20px 40px;
   }
-  .hero h1 { font-size: 2.5rem; font-weight: 600; margin-bottom: 10px; color: #F5B942; }
+  .hero h1 { font-size: 2.5rem; font-weight: 600; margin-bottom: 10px; color: #38BDF8; }
   .hero p { font-size: 1.1rem; opacity: 0.85; }
   section {
     max-width: 700px;
@@ -46,7 +40,7 @@
     padding: 30px 20px;
     border-top: 1px solid rgba(255,255,255,0.15);
   }
-  section h2 { font-size: 1.4rem; margin-bottom: 12px; color: #F5B942; }
+  section h2 { font-size: 1.4rem; margin-bottom: 12px; color: #38BDF8; }
   section p { font-size: 1rem; line-height: 1.6; opacity: 0.9; }
   .steps { display: flex; flex-direction: column; gap: 15px; }
   .step {
@@ -60,14 +54,50 @@
     text-align: center;
     margin: 40px auto;
     padding: 14px 30px;
-    background: #FF6F61;
-    color: white;
+    background: linear-gradient(135deg, #38BDF8, #4FD1C5);
+    color: #052033;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 8px;
     max-width: 220px;
   }
-  .cta:hover { background: #e85a4d; }
+  .cta:hover { filter: brightness(1.1); }
+  .hero .eyebrow {
+    font-size: 1rem;
+    color: #4FD1C5;
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
+  .hero .role-line {
+    font-size: 1.05rem;
+    color: #38BDF8;
+    font-weight: 600;
+    margin: 4px 0 14px;
+  }
+  .hero .tagline {
+    max-width: 520px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    opacity: 0.85;
+  }
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  .hero-buttons a {
+    padding: 12px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .btn-primary { background: linear-gradient(135deg, #38BDF8, #4FD1C5); color: #052033; font-weight: 700; }
+  .btn-primary:hover { filter: brightness(1.1); }
+  .btn-secondary { background: transparent; color: #38BDF8; border: 2px solid #38BDF8; }
+  .btn-secondary:hover { background: rgba(56,189,248,0.12); }
 </style>
 </head>
 <body>
@@ -78,11 +108,15 @@
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
 </nav>
- <main>
 
 <div class="hero">
-  <h1>Farah Hussain</h1>
-  <p>I connect real-time hazard data to warnings people can act on.</p>
+  <p class="eyebrow">Hi, I'm Farah Hussain</p>
+  <p class="role-line">Computer Science Student | AI/ML Enthusiast | Prompt Engineer</p>
+  <p class="tagline">I build practical AI and machine-learning solutions that turn complex problems into useful, real-world applications.</p>
+  <div class="hero-buttons">
+    <a class="btn-primary" href="projects.html">View My Projects</a>
+    <a class="btn-secondary" href="Farah_Hussain_CV.pdf" target="_blank">Download CV</a>
+  </div>
 </div>
 
 <section>
@@ -103,9 +137,8 @@
     <div class="step">3. A structured warning goes out — severity, region, and recommended action</div>
   </div>
 </section>
-<a class="cta" href="https://github.com/farahhussain159-create/flyrank-ml-week1" target="_blank">View GitHub Repo</a>
-  </main>
 
-<script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+<a class="cta" href="https://github.com/farahhussain159-create/flyrank-ml-week1" target="_blank">View GitHub Repo</a>
+
 </body>
 </html>

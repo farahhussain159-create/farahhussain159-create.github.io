@@ -191,6 +191,29 @@
     opacity: 0.88;
     line-height: 1.7;
   }
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-top: 10px;
+  }
+  .cert-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 16px;
+    border-left: 3px solid #4FD1C5;
+  }
+  .cert-card h4 {
+    font-size: 0.92rem;
+    margin: 0 0 6px;
+    color: white;
+    line-height: 1.35;
+  }
+  .cert-card .cert-provider {
+    font-size: 0.78rem;
+    color: #38BDF8;
+    font-weight: 600;
+  }
 </style>
 </head>
 <body>
@@ -272,6 +295,24 @@
       <li>Worked with GroupShuffleSplit</li>
       <li>Developed ML capstone work</li>
     </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Certificates</h2>
+  <div class="cert-grid">
+    <div class="cert-card"><h4>Google AI Essentials</h4><div class="cert-provider">Coursera</div></div>
+    <div class="cert-card"><h4>Digital Marketing & SEO</h4><div class="cert-provider">NAVTTC</div></div>
+    <div class="cert-card"><h4>AI Fluency: Framework & Foundations</h4><div class="cert-provider">Anthropic</div></div>
+    <div class="cert-card"><h4>Claude Platform 101</h4><div class="cert-provider">Anthropic</div></div>
+    <div class="cert-card"><h4>Claude Code 101</h4><div class="cert-provider">Anthropic</div></div>
+    <div class="cert-card"><h4>Claude Code in Action</h4><div class="cert-provider">Anthropic</div></div>
+    <div class="cert-card"><h4>Claude with the Anthropic API</h4><div class="cert-provider">Anthropic</div></div>
+    <div class="cert-card"><h4>Claude with Amazon Bedrock</h4><div class="cert-provider">Anthropic</div></div>
+    <div class="cert-card"><h4>Introduction to Model Context Protocol</h4><div class="cert-provider">Anthropic</div></div>
+    <div class="cert-card"><h4>Model Context Protocol: Advanced Topics</h4><div class="cert-provider">Anthropic</div></div>
+    <div class="cert-card"><h4>Introduction to Agent Skills</h4><div class="cert-provider">Anthropic</div></div>
+    <div class="cert-card"><h4>Introduction to Subagents</h4><div class="cert-provider">Anthropic</div></div>
   </div>
 </section>
 

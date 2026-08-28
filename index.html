@@ -119,6 +119,57 @@
     margin: 0;
     line-height: 1.5;
   }
+  .project-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 22px;
+    border-top: 3px solid #4FD1C5;
+    margin-top: 10px;
+  }
+  .project-card h3 {
+    font-size: 1.15rem;
+    margin: 0 0 6px;
+    color: white;
+  }
+  .project-tags {
+    font-size: 0.8rem;
+    color: #4FD1C5;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 12px;
+  }
+  .project-card p.desc {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    line-height: 1.55;
+    margin: 0 0 16px;
+  }
+  .tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .tech-pills span {
+    background: rgba(56,189,248,0.15);
+    color: #38BDF8;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .project-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+  .project-buttons a {
+    padding: 9px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .pb-primary { background: linear-gradient(135deg, #38BDF8, #4FD1C5); color: #052033; }
+  .pb-primary:hover { filter: brightness(1.1); }
+  .pb-outline { background: transparent; color: #38BDF8; border: 1.5px solid #38BDF8; }
+  .pb-outline:hover { background: rgba(56,189,248,0.12); }
 </style>
 </head>
 <body>
@@ -169,21 +220,22 @@
 </section>
 
 <section>
-  <h2>The Problem</h2>
-  <p>Pakistan faces recurring floods, earthquakes, landslides, and droughts — but early warnings often don't reach the people who need them in time.</p>
-</section>
-
-<section>
-  <h2>Featured Work: AI-Powered Disaster Warning System</h2>
-  <p>An LLM-driven system that turns raw hazard data into clear, actionable alerts — built with strict anti-fabrication rules and a structured JSON output format so every warning is consistent and trustworthy.</p>
-</section>
-
-<section>
-  <h2>How It Works</h2>
-  <div class="steps">
-    <div class="step">1. Hazard data comes in (weather, seismic, flood sources)</div>
-    <div class="step">2. LLaMA 3.1 (via Groq API) assesses risk and drafts the alert</div>
-    <div class="step">3. A structured warning goes out — severity, region, and recommended action</div>
+  <h2>Featured Projects</h2>
+  <div class="project-card">
+    <h3>AI-Powered Disaster Warning System</h3>
+    <div class="project-tags">AI / MACHINE LEARNING / LLM</div>
+    <p class="desc">An LLM-driven system that turns raw hazard data (floods, earthquakes, landslides, droughts) into clear, structured risk warnings and recommended safety actions — built with strict anti-fabrication rules so every alert is consistent and trustworthy.</p>
+    <div class="tech-pills">
+      <span>Python</span>
+      <span>LLaMA 3.1</span>
+      <span>Groq API</span>
+      <span>HTML</span>
+      <span>JSON</span>
+    </div>
+    <div class="project-buttons">
+      <a class="pb-primary" href="projects.html">View Details</a>
+      <a class="pb-outline" href="https://github.com/farahhussain159-create/flyrank-ml-week1" target="_blank">GitHub</a>
+    </div>
   </div>
 </section>
 

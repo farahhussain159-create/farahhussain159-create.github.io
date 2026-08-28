@@ -62,7 +62,7 @@
     max-width: 220px;
   }
   .cta:hover { filter: brightness(1.1); }
-   .hero .eyebrow {
+  .hero .eyebrow {
     font-size: 2.4rem;
     color: #4FD1C5;
     font-weight: 700;
@@ -96,8 +96,29 @@
   }
   .btn-primary { background: linear-gradient(135deg, #38BDF8, #4FD1C5); color: #052033; font-weight: 700; }
   .btn-primary:hover { filter: brightness(1.1); }
-  .btn-secondary { background: transparent; color: #38BDF8; border: 2px solid #38BDF8; }
-  .btn-secondary:hover { background: rgba(56,189,248,0.12); }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 10px;
+  }
+  .skill-card {
+    background: rgba(255,255,255,0.08);
+    padding: 16px;
+    border-radius: 10px;
+    border-top: 3px solid #4FD1C5;
+  }
+  .skill-card h3 {
+    font-size: 0.95rem;
+    color: #38BDF8;
+    margin: 0 0 8px;
+  }
+  .skill-card p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin: 0;
+    line-height: 1.5;
+  }
 </style>
 </head>
 <body>
@@ -118,6 +139,34 @@
     <a class="btn-secondary" href="Farah_Hussain_CV.pdf" target="_blank">Download CV</a>
   </div>
 </div>
+
+<section>
+  <h2>About Me</h2>
+  <p>I'm a final-year BSCS student at Shah Abdul Latif University, Khairpur, currently completing a dual-track internship at FlyRank — applied ML on one side, AI fluency and prompt engineering on the other. I like breaking problems down step by step and shipping things that actually work.</p>
+  <a href="about.html" style="color:#38BDF8; font-weight:600; text-decoration:none;">Read more about me →</a>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <p>Python • HTML • CSS • JavaScript</p>
+    </div>
+    <div class="skill-card">
+      <h3>AI / ML</h3>
+      <p>Machine Learning • LLMs • Prompt Engineering • Scikit-learn</p>
+    </div>
+    <div class="skill-card">
+      <h3>Data</h3>
+      <p>Pandas • NumPy • Data Analysis</p>
+    </div>
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <p>Git • GitHub • Streamlit • Groq API</p>
+    </div>
+  </div>
+</section>
 
 <section>
   <h2>The Problem</h2>

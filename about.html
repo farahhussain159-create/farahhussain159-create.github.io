@@ -3,17 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="About Farah Hussain — final-year BSCS student at SALU, Khairpur, specializing in ML and AI Fluency, building applied AI projects.">
-<meta property="og:title" content="About — Farah Hussain">
-<meta property="og:type" content="website">
 <title>About — Farah Hussain</title>
- <link rel="icon" type="image/png" href="favicon.png">
 <style>
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: 'Inter', Arial, sans-serif;
-    background-color: #0A2A66;
+    background: linear-gradient(160deg, #050B1A 0%, #0A2A66 45%, #123B8F 100%);
+    background-attachment: fixed;
     color: white;
   }
   nav {
@@ -21,8 +18,8 @@
     justify-content: center;
     gap: 30px;
     padding: 20px;
-    background-color: #08204d;
-    border-bottom: 2px solid #F5B942;
+    background-color: rgba(5, 11, 26, 0.75);
+    border-bottom: 2px solid #38BDF8;
   }
   nav a {
     color: white;
@@ -30,12 +27,12 @@
     font-weight: 600;
     font-size: 1rem;
   }
-  nav a:hover { color: #F5B942; }
+  nav a:hover { color: #38BDF8; }
   .hero {
     text-align: center;
     padding: 50px 20px 30px;
   }
-  .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; color: #F5B942; }
+  .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; color: #38BDF8; }
   .hero p { font-size: 1.05rem; opacity: 0.85; }
   section {
     max-width: 700px;
@@ -43,44 +40,66 @@
     padding: 30px 20px;
     border-top: 1px solid rgba(255,255,255,0.15);
   }
-  section h2 { font-size: 1.4rem; margin-bottom: 12px; color: #F5B942; }
+  section h2 { font-size: 1.4rem; margin-bottom: 12px; color: #38BDF8; }
   section p { font-size: 1rem; line-height: 1.6; opacity: 0.9; }
-  .box {
+  .edu-card {
     background: rgba(255,255,255,0.08);
-    padding: 15px 18px;
-    border-radius: 8px;
-    border-left: 4px solid #F5B942;
-    margin-bottom: 12px;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid #4FD1C5;
   }
-  .box:last-child { margin-bottom: 0; }
-  .box strong { color: #F5B942; }
-  .skills-grid {
+  .edu-card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+  .edu-card p { margin: 0; opacity: 0.8; font-size: 0.92rem; }
+  .focus-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
+    margin-top: 8px;
   }
-  .skill-tag {
-    background: rgba(245,185,66,0.12);
-    border: 1px solid rgba(245,185,66,0.35);
-    color: #F5B942;
+  .focus-tags span {
+    background: rgba(56,189,248,0.15);
+    color: #38BDF8;
     padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
     font-weight: 600;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 10px;
+  }
+  .skill-card {
+    background: rgba(255,255,255,0.08);
+    padding: 16px;
+    border-radius: 10px;
+    border-top: 3px solid #4FD1C5;
+  }
+  .skill-card h3 {
+    font-size: 0.95rem;
+    color: #38BDF8;
+    margin: 0 0 8px;
+  }
+  .skill-card p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin: 0;
+    line-height: 1.5;
   }
   .cta {
     display: block;
     text-align: center;
     margin: 40px auto;
     padding: 14px 30px;
-    background: #F5B942;
-    color: #0A2A66;
+    background: linear-gradient(135deg, #38BDF8, #4FD1C5);
+    color: #052033;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 8px;
     max-width: 220px;
   }
-  .cta:hover { background: #dba32f; }
+  .cta:hover { filter: brightness(1.1); }
 </style>
 </head>
 <body>
@@ -93,38 +112,61 @@
 </nav>
 
 <div class="hero">
-  <h1>About</h1>
+  <h1>About Me</h1>
 </div>
 
 <section>
-  <h2>Who I Am</h2>
-  <div class="box">
-    <p style="margin:0;">I'm a final-year BSCS student at Shah Abdul Latif University, Khairpur. I'm currently completing a dual-track internship at FlyRank — one track on applied ML and search intelligence, the other on AI fluency and prompt engineering.</p>
+  <h2>Education</h2>
+  <div class="edu-card">
+    <h3>BS Computer Science</h3>
+    <p>Shah Abdul Latif University, Khairpur — Final Year (2023 batch)</p>
+  </div>
+</section>
+
+<section>
+  <h2>Focus Areas</h2>
+  <div class="focus-tags">
+    <span>Artificial Intelligence</span>
+    <span>Machine Learning</span>
+    <span>Prompt Engineering</span>
+    <span>LLM Applications</span>
+    <span>Web Development</span>
   </div>
 </section>
 
 <section>
   <h2>Skills</h2>
   <div class="skills-grid">
-    <span class="skill-tag">Prompt Engineering</span>
-    <span class="skill-tag">LLM API Integration</span>
-    <span class="skill-tag">Python</span>
-    <span class="skill-tag">Groq / LLaMA</span>
-    <span class="skill-tag">Data Pipelines</span>
-    <span class="skill-tag">Baseline Modeling</span>
-    <span class="skill-tag">scikit-learn</span>
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <p>Python • HTML • CSS • JavaScript</p>
+    </div>
+    <div class="skill-card">
+      <h3>AI / ML</h3>
+      <p>Machine Learning • LLMs • Prompt Engineering • Scikit-learn</p>
+    </div>
+    <div class="skill-card">
+      <h3>Data</h3>
+      <p>Pandas • NumPy • Data Analysis</p>
+    </div>
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <p>Git • GitHub • Streamlit • Groq API</p>
+    </div>
   </div>
 </section>
 
 <section>
+  <h2>Experience</h2>
+  <p>Currently completing a dual-track internship at FlyRank — applied ML on one side, AI fluency and prompt engineering on the other.</p>
+</section>
+
+<section>
   <h2>How I Work</h2>
-  <div class="box"><strong>Clear, honest, no-nonsense.</strong> I'd rather ship something real and imperfect than polish something no one sees.</div>
-  <div class="box">I break problems down step by step — one piece at a time, verified before moving on.</div>
-  <div class="box">I'm not afraid to say when something's still rough. Honest status beats polished silence.</div>
+  <p>Clear and step-by-step. I'd rather ship something real and imperfect than polish something no one sees.</p>
 </section>
 
 <a class="cta" href="contact.html">Contact Me</a>
 
-<script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </body>
 </html>

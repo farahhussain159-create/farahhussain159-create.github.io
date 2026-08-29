@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Farah Hussain</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(160deg, #050B1A 0%, #0A2A66 45%, #123B8F 100%);
+    background-attachment: fixed;
+    color: white;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgba(5, 11, 26, 0.75);
+    border-bottom: 2px solid #38BDF8;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  nav a:hover { color: #38BDF8; }
+  .hero {
+    text-align: center;
+    padding: 50px 20px 30px;
+  }
+  .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; color: #38BDF8; }
+  .hero p { font-size: 1.05rem; opacity: 0.85; }
+  section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  section h2 { font-size: 1.4rem; margin-bottom: 12px; color: #38BDF8; }
+  section p { font-size: 1rem; line-height: 1.6; opacity: 0.9; }
+  .edu-card {
+    background: rgba(255,255,255,0.08);
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid #4FD1C5;
+  }
+  .edu-card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+  .edu-card p { margin: 0; opacity: 0.8; font-size: 0.92rem; }
+  .focus-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .focus-tags span {
+    background: rgba(56,189,248,0.15);
+    color: #38BDF8;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 10px;
+  }
+  .skill-card {
+    background: rgba(255,255,255,0.08);
+    padding: 16px;
+    border-radius: 10px;
+    border-top: 3px solid #4FD1C5;
+  }
+  .skill-card h3 {
+    font-size: 0.95rem;
+    color: #38BDF8;
+    margin: 0 0 8px;
+  }
+  .skill-card p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .cta {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #38BDF8, #4FD1C5);
+    color: #052033;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    max-width: 220px;
+  }
+  .cta:hover { filter: brightness(1.1); }
+
+  /* --- Global polish: glass effect + hover + responsive + scroll reveal --- */
+  .skill-card, .project-card, .exp-card, .cert-card, .card, .edu-card, .step {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  .skill-card:hover, .project-card:hover, .exp-card:hover, .cert-card:hover, .card:hover, .edu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(56,189,248,0.18);
+    border-color: rgba(56,189,248,0.45);
+  }
+  .btn-primary, .btn-secondary, .pb-primary, .pb-outline, .cta {
+    transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-primary:hover, .pb-primary:hover, .cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(56,189,248,0.3);
+  }
+  .btn-secondary:hover, .pb-outline:hover {
+    transform: translateY(-2px);
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (max-width: 600px) {
+    .hero .eyebrow { font-size: 1.7rem !important; }
+    .hero h1 { font-size: 1.7rem !important; }
+    nav { gap: 16px; padding: 14px; }
+    nav a { font-size: 0.9rem; }
+    section { padding: 24px 16px; }
+    .cards { grid-template-columns: 1fr !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+  <h1>About Me</h1>
+</div>
+
+<section class="reveal">
+  <h2>Education</h2>
+  <div class="edu-card">
+    <h3>BS Computer Science</h3>
+    <p>Shah Abdul Latif University, Khairpur — Final Year (2023 batch)</p>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Focus Areas</h2>
+  <div class="focus-tags">
+    <span>Artificial Intelligence</span>
+    <span>Machine Learning</span>
+    <span>Prompt Engineering</span>
+    <span>LLM Applications</span>
+    <span>Web Development</span>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <p>Python • HTML • CSS • JavaScript</p>
+    </div>
+    <div class="skill-card">
+      <h3>AI / ML</h3>
+      <p>Machine Learning • LLMs • Prompt Engineering • Scikit-learn</p>
+    </div>
+    <div class="skill-card">
+      <h3>Data</h3>
+      <p>Pandas • NumPy • Data Analysis</p>
+    </div>
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <p>Git • GitHub • Streamlit • Groq API</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Experience</h2>
+  <p>Currently completing a dual-track internship at FlyRank — applied ML on one side, AI fluency and prompt engineering on the other.</p>
+</section>
+
+<section class="reveal">
+  <h2>How I Work</h2>
+  <p>Clear and step-by-step. I'd rather ship something real and imperfect than polish something no one sees.</p>
+</section>
+
+<a class="cta" href="contact.html">Contact Me</a>
+
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

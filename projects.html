@@ -3,17 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Farah Hussain's AI/ML project portfolio — an AI-powered disaster warning system for Pakistan, prompt engineering work, and applied machine learning projects.">
-<meta property="og:title" content="Projects — Farah Hussain">
-<meta property="og:type" content="website">
 <title>Projects — Farah Hussain</title>
- <link rel="icon" type="image/png" href="favicon.png">
 <style>
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: 'Inter', Arial, sans-serif;
-    background-color: #0A2A66;
+    background: linear-gradient(160deg, #050B1A 0%, #0A2A66 45%, #123B8F 100%);
+    background-attachment: fixed;
     color: white;
   }
   nav {
@@ -21,8 +18,8 @@
     justify-content: center;
     gap: 30px;
     padding: 20px;
-    background-color: #08204d;
-    border-bottom: 2px solid #F5B942;
+    background-color: rgba(5, 11, 26, 0.75);
+    border-bottom: 2px solid #38BDF8;
   }
   nav a {
     color: white;
@@ -30,12 +27,12 @@
     font-weight: 600;
     font-size: 1rem;
   }
-  nav a:hover { color: #F5B942; }
+  nav a:hover { color: #38BDF8; }
   .hero {
     text-align: center;
     padding: 50px 20px 30px;
   }
-  .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; color: #F5B942; }
+  .hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; color: #38BDF8; }
   .hero p { font-size: 1.05rem; opacity: 0.85; }
   section {
     max-width: 700px;
@@ -43,7 +40,7 @@
     padding: 30px 20px;
     border-top: 1px solid rgba(255,255,255,0.15);
   }
-  section h2 { font-size: 1.4rem; margin-bottom: 12px; color: #F5B942; }
+  section h2 { font-size: 1.4rem; margin-bottom: 12px; color: #38BDF8; }
   section p { font-size: 1rem; line-height: 1.6; opacity: 0.9; }
   .highlight-box {
     background: rgba(255,255,255,0.08);
@@ -51,11 +48,11 @@
     border-radius: 8px;
     font-size: 0.95rem;
     line-height: 1.7;
-    border-left: 4px solid #F5B942;
+    border-left: 4px solid #4FD1C5;
   }
   code {
     background: rgba(0,0,0,0.3);
-    color: #F5B942;
+    color: #4FD1C5;
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 0.9rem;
@@ -65,14 +62,65 @@
     text-align: center;
     margin: 40px auto;
     padding: 14px 30px;
-    background: #F5B942;
-    color: #0A2A66;
+    background: linear-gradient(135deg, #38BDF8, #4FD1C5);
+    color: #052033;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 8px;
     max-width: 220px;
   }
-  .cta:hover { background: #dba32f; }
+  .cta:hover { filter: brightness(1.1); }
+  .project-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 22px;
+    border-top: 3px solid #4FD1C5;
+    margin-top: 10px;
+  }
+  .project-card h3 {
+    font-size: 1.15rem;
+    margin: 0 0 6px;
+    color: white;
+  }
+  .project-tags {
+    font-size: 0.8rem;
+    color: #4FD1C5;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 12px;
+  }
+  .project-card p.desc {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    line-height: 1.55;
+    margin: 0 0 16px;
+  }
+  .tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .tech-pills span {
+    background: rgba(56,189,248,0.15);
+    color: #38BDF8;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .project-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+  .project-buttons a {
+    padding: 9px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .pb-primary { background: linear-gradient(135deg, #38BDF8, #4FD1C5); color: #052033; }
+  .pb-primary:hover { filter: brightness(1.1); }
+  .pb-outline { background: transparent; color: #38BDF8; border: 1.5px solid #38BDF8; }
+  .pb-outline:hover { background: rgba(56,189,248,0.12); }
 </style>
 </head>
 <body>
@@ -90,8 +138,21 @@
 </div>
 
 <section>
-  <h2>AI-Powered Disaster Warning System</h2>
-  <p>Built with teammate Summaya Shaikh, this project turns raw hazard data (flood, earthquake, landslide, drought) into structured, actionable warnings for Pakistan. My focus was prompt engineering and LLM API integration — designing prompts that resist hallucination and produce consistent, trustworthy output every time.</p>
+  <div class="project-card">
+    <h3>AI-Powered Disaster Warning System</h3>
+    <div class="project-tags">AI / MACHINE LEARNING / LLM</div>
+    <p class="desc">Built with teammate Summaya Shaikh, this project turns raw hazard data (flood, earthquake, landslide, drought) into structured, actionable warnings for Pakistan. My focus was prompt engineering and LLM API integration — designing prompts that resist hallucination and produce consistent, trustworthy output every time.</p>
+    <div class="tech-pills">
+      <span>Python</span>
+      <span>LLaMA 3.1</span>
+      <span>Groq API</span>
+      <span>HTML</span>
+      <span>JSON</span>
+    </div>
+    <div class="project-buttons">
+      <a class="pb-outline" href="https://github.com/farahhussain159-create/flyrank-ml-week1" target="_blank">GitHub</a>
+    </div>
+  </div>
 </section>
 
 <section>
@@ -111,6 +172,5 @@
 
 <a class="cta" href="https://github.com/farahhussain159-create/flyrank-ml-week1" target="_blank">View GitHub Repo</a>
 
-<script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </body>
 </html>

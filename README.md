@@ -19,19 +19,13 @@ Point the frontend's chatbot widget fetch URL to your deployed backend URL
 Usage example
 Visit the site → go to the Contact page → type a question into the "Ask about my work" chat widget, e.g. "What projects has Farah built?" → chatbot replies using project/skills context.
 Architecture (simple sketch)
-Visitor Browser
-   |
-   |--> GitHub Pages (static site: Home / About / Projects / Contact)
-   |
-   '--> Contact page chatbot widget
-          |
-          '--> Vercel serverless function (API route)
-                 |
-                 '--> Groq API (openai/gpt-oss-20b) --> reply --> shown in widget
+
+Visitor Browser | |--> GitHub Pages (static site: Home / About / Projects / Contact) | '--> Contact page chatbot widget | '--> Vercel serverless function (API route) | '--> Groq API (openai/gpt-oss-20b) --> reply --> shown in widget
+
 v2 eval results
 Hardening checkpoint (Week 9 "Break Your Own Site") tested: empty input, garbage input, double-submit on chatbot, dead links, fresh/incognito browser
 Fixed: chatbot response truncation bug (max_tokens increased 300 → 600)
-Added: meta description + Open Graph tags on all 4 pages, <main> landmark for accessibility, custom favicon and OG share image
+Added: meta description + Open Graph tags on all 4 pages, main landmark for accessibility, custom favicon and OG share image
 Score: accessibility/color-contrast check ~85/100
 Limitations
 Chatbot does not detect or gracefully flag gibberish/nonsense input — it will still attempt a reply instead of asking for clarification
